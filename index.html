@@ -50,7 +50,8 @@
     }
 
     .BMlogo {
-      width: 180px;
+    display: block;
+      width: 10%;
       max-width: 50%;
       height: auto;
       margin: 15px 0;
@@ -109,21 +110,23 @@
     }
 
     .section-content {
-        display: flex; align-items: center; justify-content: space-between;
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;
     }
 
     .section-content .text {
-        flex: 1 1 400px;
-        max-width: 600px;
+        flex: 1 1 100px;
         padding-left: 10%;
     }
 
     .section-content .image {
-        flex: 1 1 250px;
+        flex: 1 1 100px;
         display: flex;
         justify-content: center;
-        width: 30%;
+        width: 150%;
         height: auto;
+        padding-left: 10%;
     }
 
     /* En pantallas pequeñas, poner texto e imagen uno debajo del otro */
@@ -208,6 +211,10 @@
       table, th, td {
         font-size: 0.85rem;
       }
+
+      .section-content {
+        flex-direction: column;
+      }
     }
 
     @media (max-width: 480px) {
@@ -230,7 +237,7 @@
         <div class = "title">
             <span style="flex:1"></span>
             <img src="Images/BatmanLogo.png" alt="Absolute Batman Logo" class="BMlogo">
-            <h1 style="margin-left: 2%;margin-right: 5%; text-align: right;">Bienvenido a mi pagina de Absolute Batman</h1>
+            <h1 style="margin-left: 2%;margin-right: 5%; text-align: right; padding-top: 3%;">Bienvenido a mi pagina de Absolute Batman</h1>
         </div>
 
         <div class="contenedorTabla">
