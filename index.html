@@ -5,51 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absolute Batman Info</title>
     <link rel="icon" type="image/png" href="https://logos-world.net/wp-content/uploads/2020/12/Batman-Logo-1964-1966.png">
-    <style>
-    h1 {
-        text-transform: uppercase;
-        text-align: left;
-        font-family: Arial, sans-serif;
-        margin-left: 10%;
-        font-size: 250%;
-    }
-    .contenedorTabla nav {
-        text-transform: uppercase;
-        list-style-type: none;
-        transform: translateX(60%);
-        border-style: solid;
-        border-radius: 5px;
-        padding: 20px 10px;
-    }
-    nav ol li {
-        margin: 10px;
-    }
-    nav ol li a {
-        text-decoration: none;
-        color: #112128;
-        font-family: Arial, Helvetica, sans-serif ;
-    }
-    ol li {
-        margin-bottom: 10px;
+      <style>
+    /* ---------- ESTILOS GENERALES ---------- */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #ecf4f7;
+      outline: 5px solid #0085c1;
+      margin: 0;
+      padding: 0 20px;
+      color: #112128;
     }
 
-    ol ol {
-        margin-top: 5px;
-        margin-left: 25px;
-        font-size: 90%;
+    h1 {
+      text-transform: uppercase;
+      font-size: 2rem;
+      text-align: center;
+      margin: 20px 0;
     }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+      margin: 15px 0;
+    }
+
     a {
-        color: black;
+      color: #112128;
+      text-decoration: none;
     }
-    body {
-        font-family: Arial, Helvetica, sans-serif ;
-        background-color: #ecf4f7;
-        outline-color: #0085c1;
-        outline-style: solid;
-        outline-width: 5px;
-        text-align: left;
-        padding: 0 40px;
+
+    a:hover {
+      text-decoration: underline;
     }
+
+    /* ---------- ENCABEZADO ---------- */
     .title {
         display: flex;
         align-content: left;
@@ -57,78 +47,164 @@
         margin-bottom: 25px;
         border-bottom: 2px solid #112128;
     }
+
     .BMlogo {
-        width: 20%;
-        height: 20%;
-        margin-top: 40px auto;
-        display: flex;
-        align-self: left;
-        position: relative;
-        padding-left: 3%;
+      width: 180px;
+      max-width: 50%;
+      height: auto;
+      margin: 15px 0;
     }
+
+    /* ---------- NAVEGACIÓN ---------- */
+
     .contenedorTabla {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px;
-        border-bottom: 2px solid #112128;
         padding-bottom: 3%;
     }
+
+    nav {
+      border: 2px solid #112128;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 20px auto;
+      max-width: 500px;
+      background-color: #fff;
+    }
+
+    nav ol {
+      padding-left: 20px;
+    }
+
+    nav ol li {
+      margin-bottom: 10px;
+    }
+
+    nav ol ol {
+      margin-left: 25px;
+      font-size: 0.95rem;
+    }
+
+    /* ---------- PORTADA ---------- */
     .Portada {
-        width: 30%;
-        height: auto;
-        border: 2px solid #112128;
-        transform: translateX(-19%);
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border: 2px solid #112128;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+      margin: 20px auto;
+      display: block;
     }
-    p {
-        font-size: 120%;
-        margin: 0 10%;
-        text-align: justify;
-        line-height: 1.6;
-    }
+
+    /* ---------- SECCIONES ---------- */
     section {
-        padding-bottom: 3%;
-        border-bottom: 2px solid #112128;
+      margin-top: 30px;
+      border-top: 2px solid #112128;
+      padding-top: 20px;
+      justify-content: space-between;
     }
+
+    .section-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .section-content img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border: 2px solid #112128;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
     table {
-        width: 90%;
-        margin: 0 auto;
-        border-collapse: collapse;
-        background: #fff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
-        margin-bottom: 20px;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      background: #fff;
     }
+
     th, td {
-        padding: 10px;
-        border: 1px solid #ddd;
-        text-align: left;
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+      font-size: 0.95rem;
     }
+
     th {
-        background-color: #2c3e50;
-        color: white;
-        text-transform: uppercase;
+      background-color: #2c3e50;
+      color: white;
+      text-transform: uppercase;
     }
+
     tr:nth-child(even) {
-        background-color: #f9f9f9;
+      background-color: #f9f9f9;
     }
+
     caption {
-        margin-top: 2%;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
-        margin-bottom: 20px;
-        background-color: #2c3e50;
-        color: white;
-        text-transform: uppercase;
-        background-color: #2c3e50;
-        caption-side: top;
-        font-size: 1.2em;
-        margin-bottom: 10px;
-        font-weight: bold;
-        padding: 10px;
-        border: 1px solid #ddd;
-        text-align: left;
+      background-color: #2c3e50;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      padding: 10px;
+      caption-side: top;
     }
-</style>
+
+    button {
+      display: block;
+      margin: 40px auto;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #112128;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #0085c1;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        max-width: 100%;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      table, th, td {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 0 10px;
+      }
+
+      .title h1 {
+        font-size: 1.2rem;
+      }
+
+      .BMlogo {
+        width: 120px;
+      }
+    }
+  </style>
 </head>
 <body>
     <header>
@@ -146,14 +222,14 @@
                     <li><a href="#publicacion">Historial de Publicacion?</a></li>
                     <li><a href="#tomos">Informacion de los tomos</a></li>
                     <ol>
-                        <li><a href="#primerArco">"THE ZOO"</a></li>
+                        <li><a href="#primerArco">Primer Arco, "THE ZOO"</a></li>
+                        <li><a href="#segundoArco">Segundo Arco, S/C</a></li>
                     </ol>
                 </ol>
             </nav>
             <img src="https://s3.amazonaws.com/comicgeeks/comics/covers/large-3071387.jpg?1737460060" 
             alt="Absolute Batman Portada" title="Absolute Batman Portada" class="Portada">
         </div>
-        
     </header>
 
     <section id="que_es">
@@ -271,7 +347,7 @@
                 </tr>
         </table>
     </section>
-    <section class="segundoArco">
+    <section id="segundoArco">
         <table>
             <caption>Segundo Arco de Comics sin coleccion</caption>
             <thead>
